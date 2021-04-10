@@ -32,4 +32,29 @@
     justify-content: center;
 }
 
- 
+ /* hamburger lines */
+ .menu-wrapper .Hamburger >div {
+    position: relative;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+}
+
+.menu-wrapper .Hamburger > div::before, 
+.menu-wrapper .Hamburger > div::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    z-index: 1;
+}
+
+.menu-wrapper .Hamburger > div::after {
+    top:10px;
+}
