@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
  /* hamburger lines */
@@ -41,6 +42,7 @@
     background-color: #fff;
     height: 3px;
     width: 100%;
+    transition: all 0.4s ease;
 }
 
 .menu-wrapper .Hamburger > div::before, 
@@ -53,8 +55,25 @@
     height: 3px;
     background: #fff;
     z-index: 1;
+   
 }
 
 .menu-wrapper .Hamburger > div::after {
     top:10px;
+}
+
+/* toggler turning into X */
+
+.toggler:checked + .Hamburger > div {
+    transform: rotate(46deg);
+}
+
+.toggler:checked + .Hamburger > div::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.toggler:checked + .Hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
 }
