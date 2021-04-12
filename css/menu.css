@@ -77,3 +77,9 @@
     top: 0;
     transform: rotate(90deg);
 }
+
+/* when checked and hovered it will rotate */
+
+.menu-wrapper .toggler:checked:hover + .Hamburger > div {
+    transform: rotate(225deg);
+}
