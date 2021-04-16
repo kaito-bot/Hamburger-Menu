@@ -78,6 +78,7 @@ z-index: -1;
     background: var(--primary-color);
     padding: 10px;
     border-radius: 5px;
+    border: 1px #fff solid;
      transition: all 1s ease-in-out;
     color: var(--content-color);
 
