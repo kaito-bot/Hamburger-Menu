@@ -83,3 +83,52 @@
 .menu-wrapper .toggler:checked:hover + .Hamburger > div {
     transform: rotate(225deg);
 }
+/* ============== */
+/* MENU STYLING */
+
+.menu-wrapper .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.menu-wrapper .menu > div {
+    background-color: var(--secondary-color);
+    display: flex;
+    width: 200vw;
+    height: 200vw;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    border-radius: 50%;
+    /* transform: scale(0); */
+    transition: all 0.4s ease;
+}
+
+.menu-wrapper .menu > div >div {
+    text-align: center;
+    /* opacity: 0; */
+    transition: opacity 0.4s ease;
+}
+
+.menu > div > div li {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.menu > div > div li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.menu > div > div li a:hover {
+    font-size: 2.6rem;
+    color: coral;
+}
